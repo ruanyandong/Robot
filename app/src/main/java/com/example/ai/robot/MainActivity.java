@@ -118,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // 移除消息
         mHandler.removeCallbacksAndMessages(null);
 
     }
