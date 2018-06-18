@@ -114,4 +114,10 @@ public class MainActivity extends AppCompatActivity {
         mSendMsg = findViewById(R.id.id_send_msg);
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mHandler.removeCallbacksAndMessages(null);
+    }
 }
